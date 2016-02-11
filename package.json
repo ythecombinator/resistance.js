@@ -9,8 +9,8 @@
   "scripts": {
     "setup": "npm install -g livescript browserify mocha istanbul",
     "compile": "lsc --no-header -b -c -o ./ src",
-    "test:unit": "mocha --compilers ls:LiveScript",
-    "test:report": "istanbul cover ./node_modules/mocha/bin/_mocha --compilers ls:LiveScript --report lcovonly -- -R spec",
+    "test:unit": "mocha --compilers ls:livescript",
+    "test:report": "istanbul cover ./node_modules/mocha/bin/_mocha --compilers ls:livescript --report lcovonly -- -R spec",
     "test": "npm run test:unit && npm run test:report",
     "build": "npm run compile && npm run test"
   },
