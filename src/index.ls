@@ -4,11 +4,11 @@
 
 module.exports = (circuit, type) ->
 
-    series = (circuit) -> fold1 (+), circuit
-    parallel = (circuit) -> (^ -1) fold1 (+), (map (^ -1), circuit)
+  series = fold1 (+)
+  parallel = -> (^ -1) fold1 (+), (map (^ -1), &0)
 
-    switch type
-    | 'series', 's' => series circuit
-    | 'parallel', 'p' => parallel circuit
-    | _ =>
-        console.log 'Please enter a valid type of resistors association.'
+  switch type
+  | \series   \s => series circuit
+  | \parallel \p => parallel circuit
+  | _            =>
+    console.log 'Please enter a valid type of resistors association.'
