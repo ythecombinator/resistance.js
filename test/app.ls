@@ -1,7 +1,7 @@
 'use strict'
 
-require! '../src/index.ls' : resistance
-require! 'chai': {expect}
+resistance = require '../src/index.ls'
+{expect} = require 'chai'
 
 describe "resistance.js Testing Specifications" ->
 
