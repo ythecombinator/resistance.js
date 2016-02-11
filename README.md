@@ -32,6 +32,7 @@
 - [Contributing](#contributing)
 - [Motivation](#motivation)
 - [License](#license)
+- [Credits](#credits)
 
 ## Installation
 
@@ -84,6 +85,10 @@ resistance level which only one resistor is not enough.
 
 ### Resistors in Series
 
+Let's take the following example:
+
+![Series Example](http://i.imgur.com/qQ64hx7.gif)
+
 In an association of series resistors, the equivalent resistor is equal to the
 sum of all resistors that make up the association:
 
@@ -104,7 +109,15 @@ The electric current flowing in each resistor is always the same:
 i = i1 = i2 = i3 = i4 ...
 ```
 
+And the initial example becomes:
+
+![Final](http://i.imgur.com/wZxuZ3Q.gif)
+
 ### Resistors in Parallel
+
+Let's take the following example:
+
+![Parallel Example](http://i.imgur.com/0eMK21o.gif)
 
 In an association of parallel resistors, the equivalent resistor is equal to
 the inverse of the sum of all the inverted resistors which make up the
@@ -126,6 +139,10 @@ The voltage in the electric generator is always the same:
 ```
 V = V1 = V2 = V3 = V4 = ...
 ```
+
+And the initial example becomes:
+
+![Final](http://i.imgur.com/sEKnVFm.gif)
 
 ## Development
 
@@ -160,3 +177,8 @@ and then decided to put the basics into practice.
 [resistance.js](https://github.com/mabrasil/resistance.js) is distributed under
 the MIT License, available in this repository. All contributions are assumed to
 be also licensed under the MIT License.
+
+## Credits
+
+Some contents used in the [explanation section](#understand-the-topic) were
+taken from [here](http://www.infoescola.com/fisica/associacao-de-resistores/).
