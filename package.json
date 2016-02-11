@@ -1,0 +1,46 @@
+{
+  "name": "resistance.js",
+  "version": "0.1.0",
+  "description": "Simple module to calculate electrical resistance in series and parallel circuits.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "setup": "npm install -g livescript browserify mocha istanbul",
+    "compile": "lsc --no-header -b -c -o ./ src",
+    "test:unit": "mocha --compilers ls:LiveScript",
+    "test:report": "istanbul cover ./node_modules/mocha/bin/_mocha --compilers ls:LiveScript --report lcovonly -- -R spec",
+    "test": "npm run test:unit && npm run test:report",
+    "build": "npm run compile && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mabrasil/resistance.js"
+  },
+  "keywords": [
+    "Resistance",
+    "Circuits",
+    "Series",
+    "Parallel"
+  ],
+  "author": {
+    "name": "Matheus Brasil",
+    "email": "matheus.brasil10@gmail.com",
+    "url": "https://github.com/mabrasil/resistance.js"
+  },
+  "license": {
+    "type": "MIT",
+    "url": ""
+  },
+  "bugs": {
+    "url": "https://github.com/mabrasil/resistance.js/issues"
+  },
+  "homepage": "https://github.com/mabrasil/resistance.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "prelude-ls": "^1.1.2"
+  }
+}
