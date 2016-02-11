@@ -27,6 +27,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [API](#api)
+- [Understand the Topic](#understand-the-topic)
 - [Development](#development)
 - [Contributing](#contributing)
 - [Motivation](#motivation)
@@ -55,9 +56,9 @@ console.log(resistance([1, 2, 3], 'series') + 'Ω')
 
 ## API
 
-### resistance(circuit, type)
+### `resistance(circuit, type)`
 
-#### circuit
+#### `circuit`
 
 *Type*: `array`
 
@@ -65,7 +66,7 @@ console.log(resistance([1, 2, 3], 'series') + 'Ω')
 
 *Example*: `[1, 2, 3, 4]`
 
-#### type
+#### `type`
 
 *Type*: `string`
 
@@ -75,6 +76,56 @@ console.log(resistance([1, 2, 3], 'series') + 'Ω')
 
   - `'series'` or `'s'`: Resistors in series.
   - `'parallel'` or `'p'`: Resistors in parallel.
+
+## Understand the Topic
+
+Combinating resistors is very common in many circuits, when we want to reach a
+resistance level which only one resistor is not enough.
+
+### Resistors in Series
+
+In an association of series resistors, the equivalent resistor is equal to the
+sum of all resistors that make up the association:
+
+```
+Req = R1 + R2 + R3 + R4 + ...
+```
+
+Also, the voltage in the electric generator is equal to the sum of all the
+voltages of resistors:
+
+```
+V = V1 + V2 + V3 + V4 + ...
+```
+
+The electric current flowing in each resistor is always the same:
+
+```
+i = i1 = i2 = i3 = i4 ...
+```
+
+### Resistors in Parallel
+
+In an association of parallel resistors, the equivalent resistor is equal to
+the inverse of the sum of all the inverted resistors which make up the
+association:
+
+```
+1 / Req = (1 / R1) + (1 / R2) + (1 / R3) + (1 / R4) + ...
+```
+
+Also, the current in the equivalent resistor is equal to the sum of currents
+from the resistors:
+
+```
+ i = i1 + i2 + i3 + i4 + ...
+```
+
+The voltage in the electric generator is always the same:
+
+```
+V = V1 = V2 = V3 = V4 = ...
+```
 
 ## Development
 
@@ -91,8 +142,8 @@ Here is a summary of all the commands:
 | `compile`     | Runs the Livescript compile on the source.                                               |
 | `test:unit`   | Runs [Mocha](https://mochajs.org/) in BDD mode.                                          |
 | `test:report` | Runs [Istanbul](https://github.com/gotwarlost/istanbul) coverage reports on Mocha tests. |
-| `test`:       | Runs both `test:unit` and `test:report` commands.                                        |
-| `build`:      | Runs both `compile` and `test` commands.                                                 |
+| `test`        | Runs both `test:unit` and `test:report` commands.                                        |
+| `build`       | Runs both `compile` and `test` commands.                                                 |
 
 ## Contributing
 
