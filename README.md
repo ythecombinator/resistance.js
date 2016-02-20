@@ -157,9 +157,7 @@ Here is a summary of all the commands:
 |---------------|------------------------------------------------------------------------------------------|
 | `setup`       | Installs global Node dependencies needed for development.                                |
 | `compile`     | Runs the Livescript compile on the source.                                               |
-| `test:unit`   | Runs [Mocha](https://mochajs.org/) in BDD mode.                                          |
-| `test:report` | Runs [Istanbul](https://github.com/gotwarlost/istanbul) coverage reports on Mocha tests. |
-| `test`        | Runs both `test:unit` and `test:report` commands.                                        |
+| `test`        | Runs [Mocha](https://mochajs.org/) in BDD mode.                                          |
 | `build`       | Runs both `compile` and `test` commands.                                                 |
 
 ## Contributing
