@@ -9,8 +9,9 @@ describe "resistance.js Testing Specifications" ->
 
   resistors = [1 to 3]
 
-  series = resistance resistors, \series
-  parallel = resistance resistors, \parallel
+  series    = resistance resistors, \series
+  parallel  = resistance resistors, \parallel
+  error     = resistance resistors, \error
 
   specify 'Series: Equivalent resistance is equal to the sum of all resistors which make up the association' ->
     expect series .to.equal 6
@@ -23,3 +24,9 @@ describe "resistance.js Testing Specifications" ->
 
   specify 'Parallel: Equivalent resistance is lower than the lowest resistor in the association' ->
     expect parallel .to.be.below resistors.0
+
+  specify 'Error: It should return a valid error message when user enters a non-valid resistor type parameter' ->
+    expect error .to.be.a \string
+
+  specify 'Error: It should return the correct error message when user enters a non-valid resistor type parameter' ->
+    expect error .to.equal 'Please enter a valid type of resistors association.'

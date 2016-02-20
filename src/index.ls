@@ -10,5 +10,4 @@ module.exports = (circuit, type) ->
   switch type
   | \series   \s => series circuit
   | \parallel \p => parallel circuit
-  | _            =>
-    console.log 'Please enter a valid type of resistors association.'
+  | _            => 'Please enter a valid type of resistors association.'
