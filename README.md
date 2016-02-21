@@ -52,7 +52,7 @@ resistance([1, 2, 3], 'parallel');
 //=> 0.5454545454545455
 
 console.log(resistance([1, 2, 3], 'series') + 'Ω')
-//=> 6Ω
+// 6Ω
 ```
 
 ## API

@@ -36,9 +36,9 @@
   },
   "homepage": "https://github.com/mabrasil/resistance.js",
   "dependencies": {
+    "prelude-ls": "^1.1.2"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "prelude-ls": "^1.1.2"
+    "chai": "^3.5.0"
   }
 }
