@@ -10,7 +10,7 @@
 
 <p align="center">
 
-  <a href="https://codeship.com/projects/ec5e9f90-bbe9-0133-6ce6-5a73e45d98be"><img alt="Build Status" src="https://codeship.com/projects/ec5e9f90-bbe9-0133-6ce6-5a73e45d98be"></a>
+  <a href="https://codeship.com/projects/ec5e9f90-bbe9-0133-6ce6-5a73e45d98be"><img alt="Build Status" src="https://codeship.com/projects/136049"></a>
 
   <a href="https://travis-ci.org/mabrasil/resistance.js"><img alt="Build Status" src="https://travis-ci.org/mabrasil/resistance.js.svg?branch=master"></a>
 
