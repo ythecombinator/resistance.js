@@ -42,6 +42,12 @@ $ npm install --save resistance.js
 
 ## Usage
 
+<p align="center">
+  <a href="">
+    <img alt="Screenshot" src="http://i.imgur.com/SV3HhL7.png" width="900px">
+  </a>
+</p>
+
 ```js
 const resistance = require('resistance.js');
 
