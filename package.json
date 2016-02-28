@@ -1,6 +1,6 @@
 {
   "name": "resistance.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple module to calculate electrical resistance in series and parallel circuits.",
   "main": "index.js",
   "engines": {
